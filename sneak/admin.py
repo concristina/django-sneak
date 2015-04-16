@@ -9,5 +9,5 @@ class SneakAdmin(admin.ModelAdmin):
     form = DummyForm
     actions = None
 
-    def queryset(self, request):
+    def get_queryset(self, request):
         return self.QuerySet()
